@@ -113,3 +113,135 @@ textarea{
     resize: vertical;
     box-sizing: border-box;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .shP{
+    height: 840px;
+   
+  }
+  /* Header section - make it column layout with specific order */
+  .row:first-of-type {
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  
+  /* Buttons row - keep horizontal on mobile */
+  .row:nth-of-type(2) {
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+  
+  /* Content sections - stack vertically on mobile */
+  .row:nth-of-type(n+3) {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+  }
+  
+  /* Header title - smaller font */
+  .header-title {
+    font-size: 48px !important;
+    text-align: center;
+  }
+  
+  /* Header description - smaller font */
+  .header-description {
+    font-size: 20px !important;
+    text-align: center;
+  }
+  
+  /* Circle image - smaller size */
+  .circle-container {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  
+  /* Buttons - keep horizontal but smaller */
+  .infoBTNs {
+    font-size: 20px !important;
+    padding: 6px 12px !important;
+    margin: 2px !important;
+    flex: 1;
+    min-width: 80px;
+  }
+  
+  /* Project containers - stack vertically */
+  .project-container {
+    max-width: 90vw !important;
+    width: 90vw !important;
+    margin: 10px 0 !important;
+  }
+  
+  /* Text areas - full width */
+  textarea {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    margin: 10px 0 !important;
+  }
+  
+  /* Contact section - center align */
+  .contact {
+    font-size: 28px !important;
+    text-align: center;
+  }
+  
+  .email {
+    font-size: 18px !important;
+    text-align: center;
+  }
+  
+  /* Skills and hobbies text */
+  .shP {
+    font-size: 24px !important;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* Root container adjustments */
+  #root {
+    padding: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .header-title {
+    font-size: 36px !important;
+  }
+  
+  .header-description {
+    font-size: 16px !important;
+  }
+  
+  .circle-container {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  .infoBTNs {
+    font-size: 16px !important;
+    padding: 4px 8px !important;
+    min-width: 60px;
+  }
+  
+  .contact {
+    font-size: 24px !important;
+  }
+  
+  .email {
+    font-size: 16px !important;
+  }
+  
+  .shP {
+    font-size: 20px !important;
+  }
+  
+  textarea {
+    height: 80px !important;
+  }
+}
