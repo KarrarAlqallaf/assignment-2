@@ -62,11 +62,13 @@ const App = () => {
         <Row>
           <ProjectContainer 
             title="Collapsed Tabs Titles"
-            imageSrc="/src/assets/Images/project1 img.png" 
+            imageSrc="/src/assets/Images/project1 img.png"
+            url="https://github.com/KarrarAlqallaf/Collapsed-Tabs-Titles-ZenMod"
           />
           <ProjectContainer 
             title="Jadwal GYM"
-            imageSrc="/src/assets/Images/Jadwal Page Karrar.png" 
+            imageSrc="/src/assets/Images/Jadwal Page Karrar.png"
+            url="https://www.figma.com/design/kcLsyUcdHoMwOS8iJ0dojI/SWE-web-project?node-id=0-1&t=65LVjJyRnZVvPRfZ-1"
           />
         </Row>
       )}

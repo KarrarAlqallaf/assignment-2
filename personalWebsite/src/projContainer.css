@@ -13,7 +13,20 @@
 }
 
 .project-container:hover {
-  transform: translateY(-4x);
+  transform: translateY(-4px);
+  background-color: rgba(158, 255, 255, 0.3);
+}
+
+.project-container.clickable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-container.clickable:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #A6E22E;
   background-color: rgba(158, 255, 255, 0.3);
 }
 
