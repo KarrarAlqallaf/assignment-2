@@ -99,6 +99,9 @@ const App = () => {
         <Row padding = "15px 0">
           <textarea placeholder='your message' id="message" style={{width: "941px", height: "268px"}}></textarea>
         </Row>
+        <button className='infoBTNs'>Submit</button>
+
+      
     </div>
 
   )
