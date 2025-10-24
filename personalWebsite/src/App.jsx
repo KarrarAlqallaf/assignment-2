@@ -83,18 +83,18 @@ const App = () => {
         </Row>
       )}
 
-
-      <Row justify="flex-start" align="flex-end" gap='25px'> 
+      {/* contact me section */}
+      <Row   padding = "15px 0" align="flex-end" gap='25px'> 
         <h2 className = 'contact'>Contact Me</h2>
         <p className='email'>s202267840@kfupm.edu.sa</p>
       </Row>
-       <Row gap='25px'>   
+       <Row gap='25px' padding = "15px 0">   
          <textarea placeholder="Your Name" id="name">
          </textarea>
          <textarea placeholder="Your Email" id="email">
          </textarea>
          </Row>
-        <Row>
+        <Row padding = "15px 0">
           <textarea placeholder='your message' id="message" style={{width: "941px", height: "268px"}}></textarea>
         </Row>
     </div>

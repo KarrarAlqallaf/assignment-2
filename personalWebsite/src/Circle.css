@@ -4,8 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
-  border: 3px solid #ddd;
+  background-color: #F92672;
+  border: 3px solid #F92672;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
