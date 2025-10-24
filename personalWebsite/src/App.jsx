@@ -82,37 +82,26 @@ const App = () => {
           <p className='shP'>Motor Sport, Gaming & Fitness</p>
         </Row>
       )}
+
+
+      <Row justify="flex-start" align="flex-end" gap='25px'> 
+        <h2 className = 'contact'>Contact Me</h2>
+        <p className='email'>s202267840@kfupm.edu.sa</p>
+      </Row>
+       <Row gap='25px'>   
+         <textarea placeholder="Your Name" id="name">
+         </textarea>
+         <textarea placeholder="Your Email" id="email">
+         </textarea>
+         </Row>
+        <Row>
+          <textarea placeholder='your message' id="message" style={{width: "941px", height: "268px"}}></textarea>
+        </Row>
     </div>
+
   )
 }
 
-// function App() {
-//   const [count, setCount] = useState(0)
 
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vite.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
 
 export default App

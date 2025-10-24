@@ -86,3 +86,31 @@
   color: #9EFFFF;
   margin: 0;
 }
+
+.contact{
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 36px;
+  font-weight: 600;
+  color: #9EFFFF;
+  margin: 0;
+}
+.email{
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FD971F;
+  margin: 0;
+}
+
+textarea{
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #A6E22E;
+    width: 450px;
+    height: 72px;
+    background-color: transparent;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 24px;
+    resize: vertical;
+    box-sizing: border-box;
+}
