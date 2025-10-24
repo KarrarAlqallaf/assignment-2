@@ -1,0 +1,40 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.column:hover {
+  transform: translateY(-2px);
+}
+
+.column > * {
+  flex-shrink: 0;
+}
+
+.column h1, .column h2, .column h3 {
+  margin: 0 0 8px 0;
+}
+
+.column p {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.column.center {
+  align-items: center;
+}
+
+.column.start {
+  align-items: flex-start;
+}
+
+.column.end {
+  align-items: flex-end;
+}

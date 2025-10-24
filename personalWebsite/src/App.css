@@ -1,22 +1,14 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   padding: 2rem;
   text-align: center;
+  background-color: #272822;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 @keyframes logo-spin {
   from {
@@ -39,4 +31,58 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.header-title {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 80px;
+  font-weight: 600;
+  color: #F92672;
+  margin: 0;
+}
+
+.header-description {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 32px;
+  font-weight: 400;
+  color: #9EFFFF;
+  margin: 0;
+  text-align: left;
+}
+
+
+.infoBTNs{
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 36px;
+  color: rgba(253, 151, 31, 0.6);
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.infoBTNs:hover{
+  color: rgba(253, 151, 31, 1);
+  border: transparent;
+}
+
+.infoBTNs.active:hover{
+  color: rgba(253, 151, 31, 1);
+  border: 2px solid #A6E22E;
+  background-color: transparent;
+  transform: none;
+}
+.infoBTNs.active{
+  border: 2px solid #A6E22E;
+  border-radius: 15px;
+  color: rgba(253, 151, 31, 1);
+
+}
+
+.shP{
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 32px;
+  font-weight: 600;
+  color: #9EFFFF;
+  margin: 0;
 }

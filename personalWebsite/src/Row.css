@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.row:hover {
+  transform: translateY(-1px);
+}
+
+.row > * {
+  flex-shrink: 0;
+}
+
+.row.wrap {
+  flex-wrap: wrap;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+.row.space-between {
+  justify-content: space-between;
+}
+
+.row.space-around {
+  justify-content: space-around;
+}

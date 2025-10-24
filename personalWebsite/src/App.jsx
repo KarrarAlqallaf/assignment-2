@@ -2,19 +2,86 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Circle from './Circle'
+import Row from './Row'
+import Column from './Column'
 import './App.css'
+import ProjectContainer from './projContainer'
 
 
 
 
 const App = () => {
+  const [activeTab, setActiveTab] = useState('projects')
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab)
+  }
+
   return (
     <div>
+      {/* header section */}
+      <Row>
+        <Column>
+          <h1 className='header-title'>Karrar Alqallaf</h1>
+            <p className='header-description'>
+              King Fahd University of Petroleum and<br/>
+              Minerals computer science student.<br/>
+              Saudi born at 2004 in Qatif.
+            </p>
+        </Column>
         <Circle 
           imageSrc="/src/assets/Images/My circle image.png" 
-          alt="Your profile picture"
-          size={200}
+          alt="Karrar Alqallaf profile picture"
         />
+      </Row>
+      
+      {/* info section */}
+      <Row>
+        <button 
+          className={`infoBTNs ${activeTab === 'projects' ? 'active' : ''}`}
+          onClick={() => handleTabClick('projects')}
+        >
+          Projects
+        </button>
+        <button 
+          className={`infoBTNs ${activeTab === 'skills' ? 'active' : ''}`}
+          onClick={() => handleTabClick('skills')}
+        >
+          Skills
+        </button>
+        <button 
+          className={`infoBTNs ${activeTab === 'hobbies' ? 'active' : ''}`}
+          onClick={() => handleTabClick('hobbies')}
+        >
+          Hobbies
+        </button>
+      </Row>
+
+      {/* Content sections - only show active tab */}
+      {activeTab === 'projects' && (
+        <Row>
+          <ProjectContainer 
+            title="Collapsed Tabs Titles"
+            imageSrc="/src/assets/Images/project1 img.png" 
+          />
+          <ProjectContainer 
+            title="Jadwal GYM"
+            imageSrc="/src/assets/Images/Jadwal Page Karrar.png" 
+          />
+        </Row>
+      )}
+
+      {activeTab === 'skills' && (
+        <Row>
+          <p className='shP'>Figma, Python, Java, React & more</p>
+        </Row>
+      )}
+
+      {activeTab === 'hobbies' && (
+        <Row>
+          <p className='shP'>Motor Sport, Gaming & Fitness</p>
+        </Row>
+      )}
     </div>
   )
 }

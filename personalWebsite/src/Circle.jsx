@@ -1,6 +1,6 @@
 import './Circle.css'
 
-const Circle = ({ imageSrc, alt = "Profile picture", size = 150, className = "" }) => {
+const Circle = ({ imageSrc, alt = "Profile picture", size = 400, className = "" }) => {
   return (
     <div 
       className={`circle-container ${className}`}
