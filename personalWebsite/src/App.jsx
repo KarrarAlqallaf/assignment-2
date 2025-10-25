@@ -60,8 +60,7 @@ const App = () => {
             {text.headerTitle}
           </h1>
             <p className='header-description'>
-            {/* Split the Arabic description into lines if necessary, 
-                but using a single variable is cleaner */}
+        
             {text.headerDescription}
             </p>
         </Column>
