@@ -10,7 +10,8 @@ const Column = ({
   padding = "16px",
   backgroundColor = "transparent",
   borderRadius = "8px",
-  className = ""
+  className = "",
+  ...props 
 }) => {
   return (
     <div 

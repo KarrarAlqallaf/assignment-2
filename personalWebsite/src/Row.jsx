@@ -8,7 +8,8 @@ const Row = ({
   wrap = false,
   padding = "50px 0",
   backgroundColor = "transparent",
-  className = ""
+  className = "",
+  ...props 
 }) => {
   return (
     <div 
@@ -21,6 +22,7 @@ const Row = ({
         padding,
         backgroundColor,
       }}
+      {...props}
     >
       {children}
     </div>
