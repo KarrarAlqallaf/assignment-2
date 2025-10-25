@@ -13,7 +13,7 @@ const App = () => {
 
   const handleTabClick = (tab) => {
     setActiveTab(tab)
-  }
+  } 
   
   const toggleLanguage = () => {
     setLanguage(prevLanguage => (prevLanguage === 'Eng' ? 'Arb' : 'Eng'));
@@ -35,16 +35,16 @@ const App = () => {
     emailPlaceholder: language === 'Eng' ? 'Your Email' : 'بريدك الإلكتروني',
     messagePlaceholder: language === 'Eng' ? 'your message' : 'رسالتك',
     submitButton: language === 'Eng' ? 'Submit' : 'إرسال',
-  }
+  } 
 
   return (
     // Set text direction based on language
-    <div dir={language === 'Arb' ? 'rtl' : 'ltr'}> 
+    <div className = "appContainer" dir={language === 'Arb' ? 'rtl' : 'ltr'}> 
       
       {/* header section */}
-      <Row justify="flex-start" padding="50px 88px 0px 88px" dir="ltr"> 
+      <Row justify="flex-start" padding="50px 0 0 0" dir="ltr"> 
       <button
-        className={`languageBTN ${language === 'Eng' ? 'EngActive' : 'ArbActive'}`}
+      className={`languageBTN ${language === 'Eng' ? 'EngActive' : 'ArbActive'}`}
         onClick={toggleLanguage}
       >
         {/* Button displays the language it switches *to* */}
@@ -59,14 +59,14 @@ const App = () => {
           <h1 className='header-title'>
             {text.headerTitle}
           </h1>
-          <p className='header-description'>
+            <p className='header-description'>
             {/* Split the Arabic description into lines if necessary, 
                 but using a single variable is cleaner */}
             {text.headerDescription}
-          </p>
+            </p>
         </Column>
-        <Circle
-          imageSrc="/src/assets/Images/My circle image.png"
+        <Circle 
+          imageSrc="/src/assets/Images/My circle image.png" 
           alt="Karrar Alqallaf profile picture"
         />
       </Row>
@@ -74,19 +74,19 @@ const App = () => {
       {/* info section (Tabs) */}
       <Row>
         {/* --- Tabs Translation --- */}
-        <button
+        <button 
           className={`infoBTNs ${activeTab === 'projects' ? 'active' : ''}`}
           onClick={() => handleTabClick('projects')}
         >
           {text.projectsTab}
         </button>
-        <button
+        <button 
           className={`infoBTNs ${activeTab === 'skills' ? 'active' : ''}`}
           onClick={() => handleTabClick('skills')}
         >
           {text.skillsTab}
         </button>
-        <button
+        <button 
           className={`infoBTNs ${activeTab === 'hobbies' ? 'active' : ''}`}
           onClick={() => handleTabClick('hobbies')}
         >
@@ -99,12 +99,12 @@ const App = () => {
           if it needs to be multilingual) */}
       {activeTab === 'projects' && (
         <Row>
-          <ProjectContainer
+          <ProjectContainer 
             title="Collapsed Tabs Titles" // Assuming titles are static/English
             imageSrc="/src/assets/Images/project1 img.png"
             url="https://github.com/KarrarAlqallaf/Collapsed-Tabs-Titles-ZenMod"
           />
-          <ProjectContainer
+          <ProjectContainer 
             title="Jadwal GYM" // Assuming titles are static/English
             imageSrc="/src/assets/Images/Jadwal Page Karrar.png"
             url="https://www.figma.com/design/kcLsyUcdHoMwOS8iJ0dojI/SWE-web-project?node-id=0-1&t=65LVjJyRnZVvPRfZ-1"
@@ -132,20 +132,20 @@ const App = () => {
         <h2 className = 'contact'>{text.contactTitle}</h2>
         <p className='email'>s202267840@kfupm.edu.sa</p>
       </Row>
-      <Row gap='25px' padding = "15px 0">
+       <Row gap='25px' padding = "15px 0">   
         {/* --- Contact Form Placeholder Translation --- */}
         <textarea placeholder={text.namePlaceholder} id="name"></textarea>
         <textarea placeholder={text.emailPlaceholder} id="email"></textarea>
-      </Row>
-      <Row padding = "15px 0">
+         </Row>
+        <Row padding = "15px 0">
         <textarea 
           placeholder={text.messagePlaceholder} 
           id="message" 
           style={{width: "941px", height: "268px"}}
         ></textarea>
-      </Row>
+        </Row>
       <button className='infoBTNs'>{text.submitButton}</button>
-
+      
     </div>
   )
 }

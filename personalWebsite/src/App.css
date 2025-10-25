@@ -130,6 +130,11 @@ textarea{
   left: 20px;
   z-index: 1000;
 }
+.appContainer{
+  max-width: 1200px; /* The maximum width of your content */
+  margin: 0 auto;    /* This centers the container on the page */
+  box-sizing: border-box; /* Ensures padding is included inside the max-width */
+}
 
 
 /* Mobile Responsive Styles */

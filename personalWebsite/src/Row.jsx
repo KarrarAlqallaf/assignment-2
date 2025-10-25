@@ -9,7 +9,7 @@ const Row = ({
   padding = "50px 0",
   backgroundColor = "transparent",
   className = "",
-  ...props 
+  ...props
 }) => {
   return (
     <div 
@@ -21,6 +21,7 @@ const Row = ({
         flexWrap: wrap ? "wrap" : "nowrap",
         padding,
         backgroundColor,
+        
       }}
       {...props}
     >
