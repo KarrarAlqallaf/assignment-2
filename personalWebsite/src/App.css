@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+.success-message {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 24px;
+  font-weight: 600;
+  color: #A6E22E;
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(166, 226, 46, 0.1);
+  border-radius: 10px;
+  border: 2px solid #A6E22E;
+}
 
 
 @keyframes logo-spin {
